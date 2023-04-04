@@ -6,8 +6,21 @@ from components import *
 from exceptions import ComponentError
 from enum import auto, Enum
 
+"""
+Everything is defined as an object.
+For example, a cube is defined by an object with a mesh component, and a transform component
+"""
 
 class Object:
+    """
+    The Object object is the root of every objects in the scene.
+    
+    The components are stored in a dictionnary:
+        {component Name (str) : Component Object (object)}
+        
+    The Object object has always a transform component.
+    """
+    
     def __init__(self, transform: Transform = None, name: str = ""):
         
         self.name = str(name)
