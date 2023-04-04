@@ -14,7 +14,7 @@ For example, a cube is defined by an object with a mesh component, and a transfo
 
 def main():
     mainCamera = Object().add_component(CameraComponent(display_surface = Vector3(500, 500, 400))).add_component(FirstPersonController())
-    mainCamera.transform.position = Vector3(-5, 0, 0)
+    mainCamera.transform.position = Vector3(-5, 0, 0) 
 
     teapot = prefabs.importObj(r"E:\Programation\Python\3D\teapot.obj")
     #teapot = prefabs.cube()
